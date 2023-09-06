@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>11</LangVersion>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<EnablePackageValidation>true</EnablePackageValidation>
+		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+		<DevelopmentDependency>true</DevelopmentDependency>
+		<SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Title>RequiredEnum</Title>
+        <RootNamespace>RequiredEnum</RootNamespace>
+        <AssemblyName>RequiredEnum</AssemblyName>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Yaroslav Sanko</Authors>
+        <Description>RequiredEnum is an open-source analyzer that helps handle all enum values for switch.</Description>
+        <PackageProjectUrl>https://github.com/emptycoder/RequiredEnum</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/emptycoder/RequiredEnum</RepositoryUrl>
+        <PackageTags>source; generator; switch; csharp-sourcegenerator</PackageTags>
+        <PackageReadmeFile>NuGetReadme.md</PackageReadmeFile>
+        <RepositoryType>git</RepositoryType>
+        <AssemblyVersion>0.0.1</AssemblyVersion>
+        <FileVersion>0.0.1</FileVersion>
+        <Version>0.0.1</Version>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <SignAssembly>False</SignAssembly>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.4.0"/>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.4.0"/>
+		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Remove="AnalyzerReleases.Shipped.md" />
+      <AdditionalFiles Remove="AnalyzerReleases.Unshipped.md" />
+    </ItemGroup>
+
+	<ItemGroup>
+		<None Include="../../documentation/NuGetReadme.md" Pack="true" PackagePath="" Visible="false" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+			<_Parameter1>$(AssemblyName).Tests</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+</Project>

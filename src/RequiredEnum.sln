@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequiredEnum.Analyzer", "RequiredEnum.Analyzer\RequiredEnum.Analyzer.csproj", "{DE7C7906-6745-4959-807A-C5EE3E27104A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequiredEnum.Tests", "RequiredEnum.Tests\RequiredEnum.Tests.csproj", "{2AF65458-ED7A-461C-B1D0-8D2A337CA8DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequiredEnum.Sample", "RequiredEnum.Sample\RequiredEnum.Sample.csproj", "{34C78053-0FBF-418C-A60A-7B50F74DA644}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE7C7906-6745-4959-807A-C5EE3E27104A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7C7906-6745-4959-807A-C5EE3E27104A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7C7906-6745-4959-807A-C5EE3E27104A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7C7906-6745-4959-807A-C5EE3E27104A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF65458-ED7A-461C-B1D0-8D2A337CA8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF65458-ED7A-461C-B1D0-8D2A337CA8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF65458-ED7A-461C-B1D0-8D2A337CA8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF65458-ED7A-461C-B1D0-8D2A337CA8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C78053-0FBF-418C-A60A-7B50F74DA644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C78053-0FBF-418C-A60A-7B50F74DA644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C78053-0FBF-418C-A60A-7B50F74DA644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C78053-0FBF-418C-A60A-7B50F74DA644}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
